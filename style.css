@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-bg: hsl(36, 99%, 49%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-text: hsl(0, 0%, 12%);
+  --clr-secondary-bg: hsl(36, 92%, 81%);
+  --fw-400: 400;
+  --ff-primary: "Salsa", cursive;
+  --ff-secondary: "Style Script", cursive;
+
+  --fs-100: 1rem;
+  --fs-200: 1.25rem;
+  --fs-300: 1.5rem;
+  --fs-400: 1.75rem;
+  --fs-500: 2rem;
+  --fs-600: 2.25rem;
+  --fs-700: 2.5rem;
+  --fs-800: 2.75rem;
+  --fs-900: 3rem;
+  --fs-xl: 5rem;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--clr-bg);
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+  background-color: var(--clr-secondary-bg);
+  color: #000;
+}
+/* hero-section starts */
+.hero-section {
+  background-image: url(./images/hero-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-section__dhaler-img {
+  max-width: 250px;
+  width: 100%;
+}
+
+.hero-section__desc__audio {
+  margin-left: 15rem;
+}
+
+.hero-section__desc {
+  font-family: var(--ff-primary);
+  font-size: clamp(var(--fs-400), 5vw, var(--fs-900));
+  color: var(--clr-text);
+  font-weight: var(--fw-400);
+}
+
+.hero-section__audio {
+  max-width: 500px;
+  background-color: var(--clr-secondary-bg);
+  border-radius: 3rem;
+  margin-top: 1rem;
+}
+
+.audio__desc__icons {
+  gap: 0.5rem;
+  padding-left: 0.75rem;
+}
+
+.hero-section__deepak-container img {
+  width: 400px;
+}
+/* hero-section ends */
+
+/* ganesh-laxmiji-section starts */
+
+.ganesh-laxmiji-section {
+  margin: 0 1rem;
+}
+.ganesh-laxmiji-section__img {
+  width: 100%;
+  display: block;
+  margin-top: 3rem;
+}
+
+.ganesh-laxmiji-section__heading {
+  font-family: var(--ff-secondary);
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: clamp(var(--fs-300), 5vw, var(--fs-900));
+  font-weight: var(--fw-400);
+}
+
+.ganesh-laxmiji-section__content-little__girl__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.ganesh-laxmiji-section__content {
+  max-width: 1400px;
+  min-height: 450px;
+  background-color: var(--clr-white);
+  border-radius: 1rem;
+}
+
+.ganesh-laxmiji-section__content p {
+  font-family: var(--ff-primary);
+  max-width: 600px;
+  margin-right: 3rem;
+  font-size: clamp(var(--fs-100), 3vw, var(--fs-400));
+  font-weight: var(--fw-400);
+  padding: 2rem;
+}
+.ganesh-laxmiji-section__little__girl__img {
+  max-width: 250px;
+
+  margin-left: -5rem;
+  display: block;
+}
+
+.ganesh-laxmiji-section__imgs-ganesh-laxmiji {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  padding: clamp(0.5rem, 10vw, 4rem);
+  background-color: var(--clr-white);
+  border-radius: 1rem;
+}
+
+.ganesh-laxmiji-section__imgs-ganesh-laxmiji img {
+  width: clamp(100px, 40vw, 600px);
+}
+
+.ganesh-laxmiji-section-footer-heading1 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-100);
+  margin-top: 1rem;
+}
+
+.ganesh-laxmiji-section-footer-heading2 {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-400);
+  font-size: clamp(var(--fs-300), 5vw, var(--fs-700));
+  margin-top: 1rem;
+}
+
+.footer-text {
+  text-align: end;
+  font-family: var(--ff-primary);
+  margin-bottom: 2rem;
+}
+/* ganesh-laxmiji-section ends */
+
+/* horizontal line starts here */
+.horizontal {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.horizontal__line {
+  width: 600px;
+  height: 3px;
+  background-color: var(--clr-white);
+}
+.horizontal__dots {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.horizontal__dots div {
+  width: 10px;
+  height: 10px;
+  background-color: var(--clr-white);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+/* horizontal line ends here */
+
+/* util classes starts */
+.flex-col-start {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* util classes ends */
+
+@media screen and (max-width: 836px) {
+  .hero-section__dhaler-img {
+    max-width: 250px;
+    width: 100%;
+  }
+
+  .hero-section__desc__audio {
+    margin-left: 18px;
+  }
+
+  .hero-section__deepak-container img:nth-child(1) {
+    display: none;
+  }
+  .hero-section__deepak-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .hero-section__deepak-container img:nth-child(2) {
+    max-width: 225px;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .hero-section__dhaler-img {
+    max-width: 180px;
+    width: 100%;
+  }
+  .hero-section__desc__audio {
+    max-width: 320px;
+  }
+  .audio__desc__icons :nth-child(2) {
+    display: none;
+  }
+  .audio__desc__icons :nth-child(3) {
+    display: none;
+  }
+
+  .hero-section__deepak-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .hero-section__deepak-container img:nth-child(2) {
+    max-width: 225px;
+  }
+
+  .ganesh-laxmiji-section__content {
+    min-height: 100px;
+    background-color: var(--clr-white);
+    border-radius: 1rem;
+  }
+
+  .ganesh-laxmiji-section__little__girl__img {
+    width: 150px;
+
+    margin-left: -2rem;
+  }
+
+  .ganesh-laxmiji-section__content p {
+    margin-right: 0.1rem;
+    padding: 1rem;
+  }
+}
